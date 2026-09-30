@@ -5,7 +5,7 @@
 ### Lightweight Device Control Hub for BlackBerry 10 (Android Runtime / API 18)
 
 [![Target API](https://img.shields.io/badge/Target%20API-18%20(Android%204.3)-00f0ff?style=for-the-badge&logo=android)](https://developer.android.com)
-[![Platform](https://img.shields.io/badge/Platform-BlackBerry%2010%20(Q10%20•%20Q20)-000000?style=for-the-badge&logo=blackberry)](https://blackberry.com)
+[![Platform](https://img.shields.io/badge/Platform-BlackBerry%2010%20-000000?style=for-the-badge&logo=blackberry)](https://blackberry.com)
 [![Screen](https://img.shields.io/badge/Viewport-1:1%20Square%20(720x720)-111111?style=for-the-badge)](https://en.wikipedia.org/wiki/BlackBerry_Q10)
 [![Build Toolchain](https://img.shields.io/badge/Pipeline-Java%2021%20•%20AAPT%20•%20D8-success?style=for-the-badge)](https://developer.android.com/studio/command-line)
 [![Binary Size](https://img.shields.io/badge/APK%20Size-~63%20KB-blueviolet?style=for-the-badge)]()
@@ -15,10 +15,10 @@
 
 ## 1. Overview & Motivation
 
-**ClickyBB** is a high-performance, minimalist device control utility engineered specifically for square-screen BlackBerry 10 smartphones (BlackBerry Q10, BlackBerry Q20 Classic, BlackBerry Passport, and BlackBerry Q5). Operating inside BlackBerry 10's built-in Android Runtime (Android 4.3 Jelly Bean, API Level 18), ClickyBB directly resolves physical hardware wear issues that plague legacy BlackBerry smartphones over a decade after their release.
+**ClickyBB** is a high-performance, minimalist device control utility engineered specifically for square-screen BlackBerry 10 smartphones. Operating inside BlackBerry 10's built-in Android Runtime (Android 4.3 Jelly Bean, API Level 18), ClickyBB directly resolves physical hardware wear issues that plague legacy BlackBerry smartphones over a decade after their release.
 
 ```
-       BlackBerry Q10 (720x720 Super AMOLED)
+  Tested On:BlackBerry Q10 (720x720 Super AMOLED)
  ┌──────────────────────────────────────────────┐
  │  ClickyBB • UNIVERSAL HUB       STREAM_MUSIC │
  │                                              │
@@ -37,7 +37,7 @@
 ```
 
 ### The Hardware Fatigue Dilemma
-1. **Top Power/Lock Button Degradation**: The physical dome switch under the top power button on the BlackBerry Q10 and Q20 frequently collapses, sticks, or loses travel due to age and housing wear. Replacing the midframe rarely restores reliable switch feel, making locking the screen difficult or frustrating.
+1. **Top Power/Lock Button Degradation**: The physical dome switch under the top power button on the BlackBerry Q10 frequently collapses, sticks, or loses travel due to age and housing wear. Replacing the midframe rarely restores reliable switch feel, making locking the screen difficult or frustrating.
 2. **Volume Rocker Key Flex Oxidation**: The side triple-button volume rocker assembly (Up, Mute/Voice, Down) oxidizes and wears out over time. Clicks are frequently missed, or buttons stick, causing unintended volume spikes or drops.
 3. **QNX Microkernel Sandboxing**: Native Cascades (C++/Qt) third-party applications run inside heavily restricted sandboxes under QNX Neutrino and cannot access privileged PPS power nodes (`/pps/services/power/control`) or system volume daemons without root exploits.
 
@@ -57,7 +57,7 @@ By executing within the integrated BlackBerry 10 Android Runtime container, Clic
 | **Instant Preset Chips** | Dedicated tactile capsule buttons: `-10%`, `MUTE` / `UNMUTE` (with previous level memory), `50%`, and `+10%` for quick adjustments without dragging. |
 | **OLED Standby ("SLEEP DISPLAY")** | Instantly forces display brightness to `0.001f` and covers the viewport with pitch-black (`#000000`), physically extinguishing AMOLED subpixels (0W draw) to preserve battery. |
 | **Physical Keyboard Spacebar Wake** | Standby mode can be dismissed in milliseconds by pressing the physical keyboard **[SPACEBAR]** or **[BACK]** key. |
-| **Strict 1:1 Viewport** | 100% non-scrolling interface budgeted to fit entirely within the 360x360 dp viewport of the BlackBerry Q10 and Q20 Classic. |
+| **Strict 1:1 Viewport** | 100% non-scrolling interface budgeted to fit entirely within the 360x360 dp. |
 | **Ultra-Lightweight Footprint** | Complete APK size is under **64 KB**, containing zero heavy third-party libraries, zero AndroidX bloat, and zero background analytics. |
 
 ---

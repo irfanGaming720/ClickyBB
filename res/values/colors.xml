@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Cyber-Minimalist Pure OLED Base -->
+    <color name="bg_base">#000000</color>
+    <color name="bg_card">#0A0A0A</color>
+    <color name="stroke_card">#1F1F1F</color>
+
+    <!-- High-Energy Accents -->
+    <color name="accent_neon">#00F0FF</color>
+    <color name="accent_neon_dim">#00B4D8</color>
+    <color name="accent_lime">#CCFF00</color>
+
+    <!-- Sliders & Tracks -->
+    <color name="track_bg">#161616</color>
+    <color name="track_border">#242424</color>
+
+    <!-- Capsule Chips -->
+    <color name="chip_bg">#121212</color>
+    <color name="chip_border">#252525</color>
+    <color name="chip_text">#CCCCCC</color>
+    <color name="chip_pressed">#00F0FF</color>
+
+    <!-- Monolith Hero Button -->
+    <color name="hero_btn_bg">#FFFFFF</color>
+    <color name="hero_btn_text">#000000</color>
+
+    <!-- Typography -->
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_sub">#777777</color>
+    <color name="text_dim">#444444</color>
+</resources>

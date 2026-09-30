@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base">
+
+    <!-- Strictly Non-Scrolling 1:1 Viewport Container (360x360dp) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Header bar: ~36dp height -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp">
+
+            <LinearLayout
+                android:id="@+id/headerBrand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textColor="@color/text_white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- Neon Cyan Status Dot -->
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@color/accent_neon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/badge_pill"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="1.5dp"
+                    android:paddingRight="6dp"
+                    android:paddingBottom="1.5dp"
+                    android:text="@string/badge_universal"
+                    android:textColor="@color/accent_neon"
+                    android:textSize="8.5sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/app_subtitle"
+                android:textColor="@color/text_dim"
+                android:textSize="9.5sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <!-- Volume Card: ~160dp height -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- Title Row -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_media_volume"
+                    android:textColor="@color/text_sub"
+                    android:textSize="9.5sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="STREAM_MUSIC"
+                    android:textColor="@color/text_dim"
+                    android:textSize="8.5sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!-- 34sp Clean Numeric Readout -->
+            <TextView
+                android:id="@+id/tv_volume_percent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="6dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="75%"
+                android:textColor="@color/text_white"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <!-- 28dp Chunky Volume Slider -->
+            <SeekBar
+                android:id="@+id/seek_bar_volume"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginBottom="8dp"
+                android:max="15"
+                android:maxHeight="28dp"
+                android:minHeight="28dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:progress="10"
+                android:progressDrawable="@drawable/seekbar_progress"
+                android:thumb="@drawable/seekbar_thumb"
+                android:thumbOffset="0dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:splitTrack="false" />
+
+            <!-- 30dp Preset Capsule Chips -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_vol_minus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_chip"
+                    android:text="@string/quick_minus_10"
+                    android:textColor="@color/chip_text_selector"
+                    android:textSize="10.5sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_vol_mute"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_chip"
+                    android:text="@string/quick_mute"
+                    android:textColor="@color/chip_text_selector"
+                    android:textSize="10.5sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_vol_50"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_chip"
+                    android:text="@string/quick_50"
+                    android:textColor="@color/chip_text_selector"
+                    android:textSize="10.5sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_vol_plus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_chip"
+                    android:text="@string/quick_plus_10"
+                    android:textColor="@color/chip_text_selector"
+                    android:textSize="10.5sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Standby Card: ~110dp height -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- Standby Header -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_standby"
+                    android:textColor="@color/text_sub"
+                    android:textSize="9.5sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/badge_pill"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="1.5dp"
+                    android:paddingRight="6dp"
+                    android:paddingBottom="1.5dp"
+                    android:text="AMOLED 0W"
+                    android:textColor="@color/accent_neon"
+                    android:textSize="8.5sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!-- White Pill Monolith Button -->
+            <Button
+                android:id="@+id/btnEnterStandby"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/btn_hero_standby"
+                android:text="@string/standby_btn"
+                android:textColor="@color/hero_btn_text"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <!-- Compact Caption -->
+            <TextView
+                android:id="@+id/tvStandbyCaption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:lineSpacingMultiplier="1.15"
+                android:text="@string/standby_caption"
+                android:textColor="@color/text_sub"
+                android:textSize="9.5sp" />
+        </LinearLayout>
+
+        <!-- Bottom Status Footer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="@string/footer_status"
+            android:textColor="@color/text_dim"
+            android:textSize="8.5sp" />
+
+    </LinearLayout>
+
+    <!-- Pitch-Black OLED Standby Overlay (Diode Shutoff) -->
+    <FrameLayout
+        android:id="@+id/blackoutOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_base"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <!-- Subtle wake instruction -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="24dp"
+            android:text="[ SPASI ]"
+            android:textColor="#0D0D0D"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ClickyBB</string>
+    <string name="app_subtitle">Device Control Hub</string>
+    <string name="badge_universal">AMOLED</string>
+    
+    <string name="label_media_volume">MEDIA VOLUME</string>
+    
+    <string name="quick_minus_10">-10%</string>
+    <string name="quick_mute">MUTE</string>
+    <string name="quick_unmute">UNMUTE</string>
+    <string name="quick_50">50%</string>
+    <string name="quick_plus_10">+10%</string>
+    
+    <string name="label_standby">STANDBY</string>
+    <string name="standby_btn">SLEEP DISPLAY</string>
+    <string name="standby_caption">Layar dimatikan seketika untuk menghemat daya penuh hingga sistem mengunci otomatis. Tekan [SPASI] kapan saja untuk kembali.</string>
+    
+    <string name="footer_status">PURE OLED • 1:1 SQUARE EDITION</string>
+</resources>

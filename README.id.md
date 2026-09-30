@@ -37,7 +37,7 @@
 ```
 
 ### Dilema Keausan Tombol Fisik
-1. **Penurunan Performa Tombol Power / Kunci Layar**: Saklar kubah fisik (*dome switch*) di bawah tombol power atas pada BlackBerry Q10 , macet, atau kehilangan daya pantul tactile akibat usia pakai dan keausan rumah casing. Mengganti midframe sekalipun jarang memulihkan responsivitas tombol aslinya, sehingga mematikan atau mengunci layar menjadi sulit dan membuat frustrasi.
+1. **Penurunan Performa Tombol Power / Kunci Layar**: Saklar kubah fisik (*dome switch*) di bawah tombol power atas pada BlackBerry Q10, macet, atau kehilangan daya pantul tactile akibat usia pakai dan keausan rumah casing. Mengganti midframe sekalipun jarang memulihkan responsivitas tombol aslinya, sehingga mematikan atau mengunci layar menjadi sulit dan membuat frustrasi.
 2. **Oksidasi Fleksibel Tombol Volume Samping**: Rangkaian tiga tombol volume samping (Volume Naik, Mute/Voice, Volume Turun) mengalami aus mekanis dan oksidasi jalur fleksibel seiring berjalannya waktu. Penekanan tombol sering kali terlewat, atau tombol macet yang memicu lonjakan atau penurunan volume secara tiba-tiba.
 3. **Isolasi Sandbox Microkernel QNX**: Aplikasi pihak ketiga berbasis native Cascades (C++/Qt) dikarantina ketat oleh microkernel QNX Neutrino dan tidak memiliki izin menulis langsung ke simpul PPS sistem daya (`/pps/services/power/control`) ataupun daemon volume sistem tanpa eksploitasi root.
 
@@ -155,17 +155,12 @@ ClickyBB dibangun menggunakan rantai perkakas developer modern (Java 21, Android
 ## 4. Installation & Deployment Guide
 
 ### Method 1: Direct On-Device Install (Direkomendasikan)
-1. Unduh berkas [`ClickyBB.apk`](ClickyBB.apk) langsung ke perangkat BlackBerry 10 Anda (melalui BlackBerry Browser atau transfer via kabel USB / kartu MicroSD).
+1. Unduh berkas [**ClickyBB.apk**](https://github.com/irfanGaming720/ClickyBB/releases/download/V1.0/ClickyBB.apk) langsung ke perangkat BlackBerry 10 Anda (melalui BlackBerry Browser atau salin via kartu MicroSD/kabel USB).
 2. Buka aplikasi **Pengelola Berkas** (*File Manager*) bawaan BlackBerry 10.
 3. Buka folder tempat berkas `ClickyBB.apk` tersimpan (misalnya folder `downloads/`).
 4. Ketuk berkas `ClickyBB.apk`, lalu ketuk tombol **Instal** (*Install*) di pojok kanan atas layar.
 5. Setelah selesai, ketuk **Buka** (*Open*) atau jalankan ikon **ClickyBB** langsung dari layar utama.
 
-### Method 2: Sideloading via ADB
-Jika perangkat BlackBerry 10 Anda telah mengaktifkan Mode Pengembangan (*Development Mode*):
-```bash
-adb install -r ClickyBB.apk
-```
 
 ### Device Compatibility
 | Device | Screen Size & Type | Resolution | Compatibility |
@@ -224,7 +219,6 @@ ClickyBB/
 ├── .gitattributes                # Pemetaan deteksi bahasa repositori
 ├── AndroidManifest.xml           # Deklarasi manifest Android 4.3 (API 18)
 ├── build_apk.ps1                 # Skrip build mandiri PowerShell
-├── ClickyBB.apk                  # Biner rilis siap pasang (~63 KB)
 ├── README.md                     # Dokumentasi bahasa Inggris
 ├── README.id.md                  # Dokumentasi bahasa Indonesia
 ├── res/                          # Sumber daya antarmuka AMOLED (100% Frozen)

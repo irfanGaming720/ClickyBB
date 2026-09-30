@@ -176,7 +176,7 @@ adb install -r ClickyBB.apk
 | **BlackBerry Q5** | 3.1" IPS LCD | 720 × 720 (1:1) | **Didukung Penuh** |
 | **BlackBerry Z10 / Z30** | Full Touchscreen | 1280 × 768 / 720 | Berfungsi (Tampilan 1:1 di Tengah) |
 
-*Telah diuji dan berfungsi stabil pada sistem operasi BlackBerry 10 versi 10.3.1.xxxx, 10.3.2.xxxx, dan 10.3.3.xxxx.*
+*Sudah dites di Blackberry Q10 OS versions 10.3.3.10.3.03.3216.*
 
 ---
 

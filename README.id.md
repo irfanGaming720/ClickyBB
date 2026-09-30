@@ -44,7 +44,7 @@
 ### Cara ClickyBB Mengatasinya
 Dengan memanfaatkan lingkungan terintegrasi Android Runtime pada BlackBerry 10, ClickyBB mengakses langsung API subsistem `AudioManager` dan pengontrol kecerahan jendela Android, menghadirkan:
 - **Kontrol Volume Media Tanpa Aus Hardware**: Slider volume master di layar yang responsif lengkap dengan tombol kapsul preset taktil instan.
-- **Standby Layar OLED Sejati ("SLEEP DISPLAY")**: Lapisan penutup hitam murni (`#000000`) yang secara fisik memadamkan dioda layar AMOLED tanpa mengunci perangkat secara agresif, dapat dibangunkan seketika menggunakan tombol **[SPASI]** (*Spacebar*) atau **[KEMBALI]** (*Back*) pada keyboard fisik.
+- **Standby Layar OLED Sejati ("SLEEP DISPLAY")**: Lapisan penutup hitam murni (`#000000`) yang secara fisik memadamkan dioda layar AMOLED tanpa mengunci perangkat secara agresif, dapat dibangunkan seketika menggunakan tombol **[SPASI]** (*Spacebar*) pada keyboard fisik.
 - **Tata Letak Persegi 1:1 Tanpa Scroll**: Dirancang presisi khusus untuk layar 720x720 (viewport 360x360 dp) yang sepenuhnya muat dalam satu tampilan layar tanpa perlu digulir (*zero vertical scrolling*), tanpa elemen yang berantakan, serta mengusung tema hitam AMOLED murni.
 
 ---

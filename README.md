@@ -155,7 +155,7 @@ ClickyBB is built using modern developer toolchains (Java 21, Android SDK Build-
 ## 4. Installation & Deployment Guide
 
 ### Method 1: Direct On-Device Install (Recommended)
-1. Download [`ClickyBB.apk`](ClickyBB.apk) directly onto your BlackBerry 10 device (via BlackBerry Browser or transfer via USB / MicroSD card).
+1. Unduh berkas [**ClickyBB.apk**](https://github.com/irfanGaming720/ClickyBB/releases/download/V1.0/ClickyBB.apk) langsung ke perangkat BlackBerry 10 Anda (melalui BlackBerry Browser atau salin via kartu MicroSD/kabel USB).
 2. Open the native **File Manager** app on your BlackBerry device.
 3. Navigate to the folder containing `ClickyBB.apk` (e.g. `downloads/`).
 4. Tap `ClickyBB.apk`, then tap **Install** in the top-right corner.

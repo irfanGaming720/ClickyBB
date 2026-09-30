@@ -219,7 +219,6 @@ ClickyBB/
 ├── .gitattributes                # Repository language mapping
 ├── AndroidManifest.xml           # Android 4.3 (API 18) manifest declaration
 ├── build_apk.ps1                 # Headless PowerShell compilation pipeline
-├── ClickyBB.apk                  # Production-signed binary (~63 KB)
 ├── README.md                     # Documentation (English)
 ├── README.id.md                  # Documentation (Bahasa Indonesia)
 ├── res/                          # 100% Frozen AMOLED UI resources

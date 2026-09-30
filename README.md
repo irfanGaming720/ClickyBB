@@ -44,7 +44,7 @@
 ### How ClickyBB Solves It
 By executing within the integrated BlackBerry 10 Android Runtime container, ClickyBB hooks directly into the Android `AudioManager` and window brightness manager, providing:
 - **Zero-Wear Media Volume Control**: A responsive on-screen master volume controller with tactile instant-preset chips.
-- **True OLED Standby ("SLEEP DISPLAY")**: A pure `#000000` blackout overlay that physically powers off AMOLED display diodes without immediately locking the device, wakeable instantly with the physical keyboard **[SPACEBAR]** or **[BACK]** key.
+- **True OLED Standby ("SLEEP DISPLAY")**: A pure `#000000` blackout overlay that physically powers off AMOLED display diodes without immediately locking the device, wakeable instantly with the physical keyboard **[SPACEBAR]** key.
 - **Strict 1:1 Square Non-Scrolling Layout**: Handcrafted specifically for 720x720 displays (360x360 dp viewport) with zero vertical scrolling, zero clutter, and pure AMOLED black styling.
 
 ---
